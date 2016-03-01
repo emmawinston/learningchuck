@@ -71,10 +71,8 @@ for (0 => int i; i < 2; i++) {
 ongain => t.gain;
 second => now;
 
-while (melody > 0) {
-    1.5*melody => t.freq;
-    //lower pitch
-    1.0 -=> melody;
-    //increment time
+for (330 => int i; i > 0; i--) {
+    i => t.freq;
+    i*1.333 => s.freq;
     0.01::second => now;
 }
