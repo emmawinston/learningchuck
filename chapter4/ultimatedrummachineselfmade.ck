@@ -14,7 +14,7 @@ SndBuf cowbell => master;
 SndBuf clap => Pan2 cPan;
 
 cPan.chan(0) => master[0];
-cPan.chan(1) => master[2];
+cPan.chan(1) => master[2]; //I think this makes sense
 
 //load up samples
 me.dir()+"/audio/kick_01.wav" => kick.read;
