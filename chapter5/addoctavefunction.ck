@@ -1,6 +1,6 @@
 // function that adds octave to any MIDI note number passed to it
 
-function addOctave( int note )
+function int addOctave( int note )
 {
     int result;
     note + 12 => result;
